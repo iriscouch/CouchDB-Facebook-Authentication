@@ -41,15 +41,14 @@ param to _\_fb_.
 Build
 --------------------
 
-There is an unsophisticated Makefile with targets for _test_ (requires eunit), _compile_ and _install_. 
+Use Build CouchDB: https://github.com/iriscouch/build-couchdb
 
-In order to compile and install this module you might have to edit the Makefile and change one or more of _COUCH\_ROOT_, _\_COUCHDB\_ERLANG\_LIB_, _COUCHDB\_LOCALD_ and _COUCHDB\_INIT\_SCRIPT_ values to point to the appropriate directories and file within your couchdb installation.
-
+    rake plugin='git://github.com/iriscouch/CouchDB-Facebook-Authentication origin/master'
 
 Installation
 -------------------
 
-You need to copy the beam file to somewhere where couch can find it. That location could be something like couchdb/erlang/lib/couch-1.0.1/ebin/ it depends on where/how you've installed couch.
+By using Build CouchDB this is already done. Wise move on your part there, pal.
 
 You'll also need to create a [Facebook app](See http://developer.Facebook.com)
 
